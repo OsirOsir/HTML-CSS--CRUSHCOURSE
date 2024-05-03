@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .image{
+      width: 100px;
+      height: 100px;
+      border-radius: 200px;
+      object-fit: cover;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    .txt{
+      border: none;
+      font-size: 40px;
+      padding: 10px 10px;
+      margin-right: 0px;
+      vertical-align: middle;
+    }
+    .txt:focus{
+      outline: none;
+    }
+    button{
+      background-color: rgb(36, 132, 196);
+      font-size: 20px;
+      font-weight: bold;
+      color:white;
+      vertical-align: middle;
+      padding: 15px 25px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover{
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <img class="image" src="images/img1.webp" alt="">
+  <input class="txt" type="text" placeholder="What's happenning?">
+  <button>Tweet</button>
+</body>
+</html>
