@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .e11a{
+      display: grid;
+      grid-template-columns: 200px 75px;
+    }
+    .e11b{
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+    }
+    .col-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="e11a">
+    <div style="background-color:lightblue;">200px</div>
+    <div style="background-color: lightpink;">75px</div>
+  </div>
+  <dive class="e11b">
+    <div style="background-color:lightblue;">col1</div>
+    <div style="background-color: lightpink;">col2</div>
+    <div style="background-color:lightblue;">col3</div>
+  </div>
+
+  <div class="col-grid">
+    <div style="background-color: lightpink; width: 150px;">col1</div>
+    <div style="background-color: lightpink; width: 150px">col2</div>
+    <div style="background-color: lightpink; width: 150px">col3</div>
+    <div style="background-color: lightpink; width: 150px">col4</div>
+    <div style="background-color: lightpink; width: 150px">col1</div>
+    <div style="background-color: lightpink; width: 150px">col2</div>
+    <div style="background-color: lightpink; width: 150px">col3</div>
+    <div style="background-color: lightpink; width: 150px">col4</div>
+  </div>
+</body>
+</html>
