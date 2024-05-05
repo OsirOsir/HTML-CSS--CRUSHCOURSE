@@ -3,18 +3,54 @@
 <head>
   <title>Document</title>
   <style>
-
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    margin-left: 10px;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  align-items: center;
+}
+div{
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: normal;
+ 
+}
+button{
+  background-color: rgb(99, 125, 197);
+  color: white;
+  font-size: 20px;
+  /* width: 100% */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 30px;
+}
   </style>
 </head>
 <body>
-  <div style="
-    display: flex;
-    flex-direction: column;
-    
-    ">
-    <div>Home <button>14</button></div>
-    <div>Notification <button>3</button></div>
-    <div>Messages <button>5</button></div>
+  <div class="mainDiv">
+    <div class="icons">
+      <div>Home</div>
+      <div><button>14</button>
+      </div>
+    </div>
+    <div class="icons">
+      <div> Notification</div>
+      <div><button>3</button></div>
+    </div>
+    <div class="icons">
+      <div>Messages</div>
+      <div><button>5</button></div>
+    </div>
   </div>
 </body>
 </html>
