@@ -6,40 +6,51 @@
     p{
       font-size: 20px;
       font-family: Arial;
-      margin:0px;
+      margin: 10px;
+      
     }
     .main-div{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+    margin:20px 20px;
+    padding: 10px 10px;
+    width: 530px;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.1);
 
+  
     }
     .inbox{
-      color: gray;
-      font-family: Arial;
-      font-size: 20px;
-      /* margin-bottom: 20px; */
+     margin-bottom: 20px;
+     color: gray;
     }
 
     .profile-Information{
+      display: flex;
       align-items: center;
-    }
-    .prof-image{
-      height: 50px;
-      border-radius: 25px;
-      align-items: center;
+      margin-bottom: 10px;
+      
 
     }
+    .prof-image{
+     height: 70px;
+     width: 70px;
+     border-radius: 35px;
+     margin-bottom: 10px;
+     object-fit: cover;
+    }
     .infor{
-      display: inline-block;
-      vertical-align: top;
       font-weight: bold;
+      
+    }
+    .email-header{
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      justify-content: space-between;
     }
     .time{
-      display: inline-block;
-      vertical-align: top;
+      font-size: 20px;
+      margin: 0;
       color: gray;
-      /* margin: 0; */
+      font-weight: normal;
     }
   </style>
 </head>
@@ -49,11 +60,35 @@
   <div class="profile-Information">
     <img class="prof-image" src="img2.jpg" alt="">
     <div class="infor">
-      <p style="margin-top: 0;">Chewy Promotions</p>
+      <div class="email-header">
+        <div><p style="margin: 0;">Chewy Promotions</p></div>
+        <div class="time">4:58 PM</div>
+      </div>
       <p>Biggest sales of the year!</p>
       <p style="color: gray; font-weight: normal;">Hey there! We're writing to tell you about our...</p>
     </div>
-    <p class="time">4:58 PM</p>
+  </div>
+  <div class="profile-Information">
+    <img class="prof-image" src="img3.jpg" alt="">
+    <div class="infor">
+      <div class="email-header">
+        <div><p style="margin: 0;">Best Buy</p></div>
+        <div class="time">12:32 PM</div>
+      </div>
+      <p>Your Best Buy eReceipt!</p>
+      <p style="color: gray; font-weight: normal;">Thank you for shopping at Best Buy, here is...</p>
+    </div>
+  </div>
+  <div class="profile-Information">
+    <img class="prof-image" src="img4.jpg" alt="">
+    <div class="infor">
+      <div class="email-header">
+        <div><p style="margin: 0;">Netflix</p></div>
+        <div class="time">9:00 AM</div>
+      </div>
+      <p>Here's what's coming soon to Netflix</p>
+      <p style="color: gray; font-weight: normal;">Brand new movies and shows, old favourites...</p>
+    </div>
   </div>
 </div>  
 </body>
