@@ -42,10 +42,8 @@
   height: 36px;
   padding-left: 10px;
   font-size: 16px;
-  border-width: 1px;
-  border-color: rgb(235, 231, 231);
-  border-style: solid;
-  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(192, 192, 192);
+  /* background-color: rgb(240, 240, 240); */
   border-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
@@ -66,14 +64,22 @@
   
 }
 
-.search-button, .voice-search-button{
+.search-button, 
+.voice-search-button,
+.upload-icon-container,
+.youtube-icons-container,
+.notifications-icons-container{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 .search-button .tooltip, 
-.voice-search-button .tooltip {
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-icons-container .tooltip,
+.notifications-icons-container .tooltip{
+  font-family: Roboto,arial;
   position: absolute;
   background-color: gray;
   color: white;
@@ -91,7 +97,10 @@
 }
 
 .search-button:hover .tooltip,
-.voice-search-button:hover .tooltip{
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-icons-container:hover .tooltip,
+.notifications-icons-container:hover .tooltip{
   opacity: 1;
 }
 

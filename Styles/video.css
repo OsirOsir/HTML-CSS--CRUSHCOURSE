@@ -1,7 +1,39 @@
-
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .thumbnail{
  width: 100%;
  
+}
+.video-time{
+  font-family: roboto, arial;
+  font-size: 12px;
+  font-weight: 500px;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
 }
 .video-title{
   width: 240px;
@@ -19,6 +51,51 @@
   width: 36px;
   border-radius: 80px;
 }
+.channel-picture{
+  position: relative;
+  cursor: pointer;
+}
+.channel-picture-container-tooltip{
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: -50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  z-index: 1000;
+}
+.channel-picture:hover .channel-picture-container-tooltip{
+  opacity: 1;
+}
+.picture-container-div{
+  display: inline-block;
+  margin-right: 10px;
+}
+.channel-picture-container-tooltip img{
+  height: 60px;
+  border-radius: 50%;
+}
+.infor-tooltip{
+  width: 165px;
+  display: flex;
+  flex-direction: column;
+
+}
+.author-name-tooltip{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.subscribers-tooltip{
+  color: gray;
+  font-weight: 500;
+}
 .thumnail-row{
   margin-bottom: 8px;
   position: relative;
@@ -31,25 +108,4 @@
 .video-author{
   margin-bottom: 4px;
 }
-.video-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 40px;
-}
 
-.video-time{
-  font-family: roboto, arial;
-  font-size: 12px;
-  font-weight: 500px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-radius: 2px;
-  background-color: black;
-  color: white;
-  position: absolute;
-  bottom: 8px;
-  right: 5px;
-}
