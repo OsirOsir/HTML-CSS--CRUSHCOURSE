@@ -128,17 +128,21 @@
 }
 .upload-icons{
   height: 24px;
+  cursor: pointer;
 }
 
 .youtube-icons{
   height: 24px;
+  cursor: pointer;
 }
 
 .notifications-icons{
   height: 24px;
+  cursor: pointer;
 }
 .notifications-icons-container{
   position: relative;
+  cursor: pointer;
 }
 .notifications-count{
   position: absolute;
@@ -157,4 +161,11 @@
 .current-user-picture{
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
+}
+
+.current-user-picture{
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
 }
