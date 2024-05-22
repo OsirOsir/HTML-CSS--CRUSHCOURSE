@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCB iBank</title>
+    <link rel="website icon" type="jpg" href="kcb.JPG">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="kcb.JPG"  alt="KCB Logo">
+            <h1>iBANK</h1>
+        </div>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="user-id">User ID:</label>
+                <input type="text" id="user-id" placeholder="8714306">
+            </div>
+            <div class="form-group" style="position:relative;">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Nyadina@2023">
+                <span class="show-password" onclick="togglePassword()">👁️</span>
+            </div>
+            <button class="login-btn">LOGIN</button>
+            <div class="security-tips">
+                <p>We are happy to inform you about the launching of our new website. The website address remains the same hence if you have the link saved please refresh so as to use our new website</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Privacy and Security | Terms and Conditions
+    </div>
+    <div class="chatbot">
+        <img src="chatbot-avatar.png" alt="Chatbot Avatar">
+        <div>Hello there! My name is Kaycee. I’m your KCB iBank chatbot. How can I help you today?</div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById('password');
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
