@@ -4,7 +4,7 @@ padding: 100px ;
 }
 p{
   font-size: 15px;
-  font-weight: bold;
+  font-weight: bolder;
   position: absolute;
 }
 .vertical-div1{
@@ -42,6 +42,11 @@ font-family: sans-serif;
   display: flex;
   /* justify-content: space-around; */
   margin-top: 200px;
+}
+
+.vertical-div2 p{
+  bottom: -80px;
+  left: 70px;
 }
 .color-DV2{
   background-color: #330066;
