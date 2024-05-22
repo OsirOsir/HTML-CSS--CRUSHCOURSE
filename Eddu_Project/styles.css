@@ -1,3 +1,5 @@
+body{
+}
 
 .main-grid{
 padding: 100px ;
@@ -6,7 +8,26 @@ p{
   font-size: 15px;
   font-weight: bolder;
   position: absolute;
+  
 }
+br{
+  margin-left: 100px;
+}
+.vertical-div1 .color-DV1 p{
+  top: -40px;
+  left: 280px;
+}
+
+.vertical-div1 .color-w1 p{
+  top: -40px;
+  left: 40px;
+}
+
+.vertical-div1 .color-o1 p{
+  top: -40px;
+  left: 40px;
+}
+
 .vertical-div1{
 align-items: center;
 vertical-align: middle;
@@ -20,6 +41,8 @@ font-family: sans-serif;
   border-radius: 4px;
   display: inline-block;
   margin-right: 200px;
+  position: relative;
+
 }
 .color-w1{
   background-color: rgb(161, 118, 118);
@@ -28,6 +51,8 @@ font-family: sans-serif;
   display: inline-block;
   margin-right: 104px ;
   border-radius: 4px;
+  position: relative;
+
 
 }
 .color-o1{
@@ -36,6 +61,8 @@ font-family: sans-serif;
   height: 100px;
   display: inline-block;
   border-radius: 4px;
+  position: relative;
+
   
 }
 .vertical-div2{
@@ -47,6 +74,8 @@ font-family: sans-serif;
 .vertical-div2 p{
   bottom: -80px;
   left: 70px;
+  /* align-items: center; */
+
 }
 .color-DV2{
   background-color: #330066;
